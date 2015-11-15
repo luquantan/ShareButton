@@ -58,6 +58,7 @@
 		D9001C361BF93F6A00DDEF53 /* ShareButton */ = {
 			isa = PBXGroup;
 			children = (
+				D9001C4E1BF9421700DDEF53 /* Views */,
 				D9001C3A1BF93F6A00DDEF53 /* AppDelegate.h */,
 				D9001C3B1BF93F6A00DDEF53 /* AppDelegate.m */,
 				D9001C3D1BF93F6A00DDEF53 /* ViewController.h */,
@@ -77,6 +78,13 @@
 				D9001C381BF93F6A00DDEF53 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9001C4E1BF9421700DDEF53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
