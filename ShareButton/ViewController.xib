@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
@@ -14,17 +14,19 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hbdfaskdbflaksbd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-i4-3Pq">
-                    <rect key="frame" x="230" y="290" width="140" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVz-9s-5zn">
+                    <rect key="frame" x="180" y="275" width="240" height="50"/>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="a6A-ug-FpK"/>
+                        <constraint firstAttribute="width" constant="240" id="quZ-a1-SO7"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="2hT-i4-3Pq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ocr-1Z-35k"/>
-                <constraint firstItem="2hT-i4-3Pq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RJX-lG-Gtx"/>
+                <constraint firstItem="lVz-9s-5zn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SK2-Hn-FQi"/>
+                <constraint firstItem="lVz-9s-5zn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Te9-Af-ALe"/>
             </constraints>
         </view>
     </objects>
