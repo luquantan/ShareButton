@@ -14,6 +14,8 @@
 		D9001C421BF93F6A00DDEF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9001C401BF93F6A00DDEF53 /* Main.storyboard */; };
 		D9001C441BF93F6A00DDEF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9001C431BF93F6A00DDEF53 /* Assets.xcassets */; };
 		D9001C471BF93F6A00DDEF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9001C451BF93F6A00DDEF53 /* LaunchScreen.storyboard */; };
+		D9D730241BF9447200EC8137 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D730231BF9447200EC8137 /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		D9D730281BF9453800EC8137 /* UIView+loadNib.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D730271BF9453800EC8137 /* UIView+loadNib.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		D9001C431BF93F6A00DDEF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9001C461BF93F6A00DDEF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9001C481BF93F6A00DDEF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D730231BF9447200EC8137 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D9D730261BF9453800EC8137 /* UIView+loadNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+loadNib.h"; path = "Category/UIView+loadNib.h"; sourceTree = "<group>"; };
+		D9D730271BF9453800EC8137 /* UIView+loadNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+loadNib.m"; path = "Category/UIView+loadNib.m"; sourceTree = "<group>"; };
 		F065C7A99D15164A5A079493 /* Pods-ShareButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareButton/Pods-ShareButton.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,11 +87,13 @@
 		D9001C361BF93F6A00DDEF53 /* ShareButton */ = {
 			isa = PBXGroup;
 			children = (
+				D9D730251BF9451B00EC8137 /* Category */,
 				D9001C4E1BF9421700DDEF53 /* Views */,
 				D9001C3A1BF93F6A00DDEF53 /* AppDelegate.h */,
 				D9001C3B1BF93F6A00DDEF53 /* AppDelegate.m */,
 				D9001C3D1BF93F6A00DDEF53 /* ViewController.h */,
 				D9001C3E1BF93F6A00DDEF53 /* ViewController.m */,
+				D9D730231BF9447200EC8137 /* ViewController.xib */,
 				D9001C401BF93F6A00DDEF53 /* Main.storyboard */,
 				D9001C431BF93F6A00DDEF53 /* Assets.xcassets */,
 				D9001C451BF93F6A00DDEF53 /* LaunchScreen.storyboard */,
@@ -109,6 +116,15 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		D9D730251BF9451B00EC8137 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D9D730261BF9453800EC8137 /* UIView+loadNib.h */,
+				D9D730271BF9453800EC8137 /* UIView+loadNib.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +189,7 @@
 			files = (
 				D9001C471BF93F6A00DDEF53 /* LaunchScreen.storyboard in Resources */,
 				D9001C441BF93F6A00DDEF53 /* Assets.xcassets in Resources */,
+				D9D730241BF9447200EC8137 /* ViewController.xib in Resources */,
 				D9001C421BF93F6A00DDEF53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D730281BF9453800EC8137 /* UIView+loadNib.m in Sources */,
 				D9001C3F1BF93F6A00DDEF53 /* ViewController.m in Sources */,
 				D9001C3C1BF93F6A00DDEF53 /* AppDelegate.m in Sources */,
 				D9001C391BF93F6A00DDEF53 /* main.m in Sources */,
