@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVz-9s-5zn">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVz-9s-5zn" customClass="LQSlidingView">
                     <rect key="frame" x="180" y="275" width="240" height="50"/>
                     <color key="backgroundColor" red="0.85490196080000003" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>

@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQSlidingView"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQSlidingView">
+            <connections>
+                <outlet property="slidingView" destination="TVh-Jx-Cp8" id="4b6-iz-97O"/>
+                <outlet property="slidingViewTrailingConstraint" destination="B5x-sy-XWD" id="tmr-aR-JLF"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LQSlidingView">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="491" height="88"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.99215686270000003" green="0.47058823529999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVh-Jx-Cp8" userLabel="SlidingView">
+                    <rect key="frame" x="0.0" y="0.0" width="491" height="88"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.77254901960784317" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.19215686274509802" green="0.066666666666666666" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TVh-Jx-Cp8" secondAttribute="bottom" id="6zA-A0-gRV"/>
+                <constraint firstAttribute="trailing" secondItem="TVh-Jx-Cp8" secondAttribute="trailing" id="B5x-sy-XWD"/>
+                <constraint firstItem="TVh-Jx-Cp8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S49-uF-6UQ"/>
+                <constraint firstItem="TVh-Jx-Cp8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gNL-FQ-Dnu"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="242.5" y="-42"/>
