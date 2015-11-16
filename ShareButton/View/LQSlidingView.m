@@ -8,10 +8,12 @@
 
 #import "LQSlidingView.h"
 #import "UIView+constraints.h"
+#import "LQShareView.h"
 
-@interface LQSlidingView()
+@interface LQSlidingView() <LQShareViewDelegate>
 @property (nonatomic, strong) UIView *nibView;
 @property (weak, nonatomic) IBOutlet UIView *slidingView;
+@property (weak, nonatomic) IBOutlet LQShareView *shareView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *slidingViewTrailingConstraint;
 @end
 
@@ -22,6 +24,7 @@
     [self loadNib];
     [self setupCorner];
     [self setupTapGesture];
+    self.shareView.delegate = self;
 }
 
 #pragma mark - Setup
@@ -43,16 +46,44 @@
 
 - (void)didTapView {
     if (self.slidingViewTrailingConstraint.constant == 0.0f) {
-        [UIView animateWithDuration:0.5 animations:^{
-            self.slidingViewTrailingConstraint.constant = CGRectGetWidth(self.slidingView.bounds);
-            [self layoutIfNeeded];
-        }];
+        [self openViewWithCompletion:nil];
     } else {
-        [UIView animateWithDuration:0.5 animations:^{
-            self.slidingViewTrailingConstraint.constant = 0.0f;
-            [self layoutIfNeeded];
-        }];
+        [self closeViewWithCompletion:nil];
     }
+}
+
+- (void)openViewWithCompletion:(void(^)(void))completion {
+    [UIView animateWithDuration:0.5 animations:^{
+        self.slidingViewTrailingConstraint.constant = CGRectGetWidth(self.slidingView.bounds);
+        [self layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        if (finished) {
+            if (completion) {
+                completion();
+            }
+        }
+    }];
+}
+
+- (void)closeViewWithCompletion:(void(^)(void))completion {
+    [UIView animateWithDuration:0.5 animations:^{
+        self.slidingViewTrailingConstraint.constant = 0.0f;
+        [self layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        if (finished) {
+            if (completion) {
+                completion();
+            }
+        }
+    }];
+}
+
+#pragma mark - LQShareViewDelegate 
+
+- (void)shareViewDidFinish:(LQShareView *)shareView withCompletion:(void (^)(void))completion {
+    [self closeViewWithCompletion:^{
+        completion();
+    }];
 }
 
 #pragma mark - Load Nib

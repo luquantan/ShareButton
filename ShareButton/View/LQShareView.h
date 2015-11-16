@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LQShareView : UIView
+@class LQShareView;
 
+@protocol LQShareViewDelegate <NSObject>
+- (void)shareViewDidFinish:(LQShareView *)shareView withCompletion:(void(^)(void))completion;
+@end
+
+@interface LQShareView : UIView
+@property (nonatomic, weak) id<LQShareViewDelegate> delegate;
 @end

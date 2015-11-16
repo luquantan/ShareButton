@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQSlidingView">
             <connections>
+                <outlet property="shareView" destination="bsS-a1-dhC" id="WZv-0U-Odf"/>
                 <outlet property="slidingView" destination="TVh-Jx-Cp8" id="4b6-iz-97O"/>
                 <outlet property="slidingViewTrailingConstraint" destination="B5x-sy-XWD" id="tmr-aR-JLF"/>
             </connections>
@@ -15,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="491" height="88"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-a1-dhC" userLabel="ContentView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-a1-dhC" userLabel="ContentView" customClass="LQShareView">
                     <rect key="frame" x="491" y="0.0" width="491" height="88"/>
                     <color key="backgroundColor" red="0.19215686269999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
