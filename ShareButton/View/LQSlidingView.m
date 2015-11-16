@@ -42,13 +42,15 @@
 #pragma mark - Gesture
 
 - (void)didTapView {
-    if (CATransform3DEqualToTransform(self.slidingView.layer.transform, CATransform3DIdentity)) {
+    if (self.slidingViewTrailingConstraint.constant == 0.0f) {
         [UIView animateWithDuration:0.5 animations:^{
-            self.slidingView.transform = CGAffineTransformMakeTranslation(-CGRectGetWidth(self.slidingView.bounds), 0.0f);
+            self.slidingViewTrailingConstraint.constant = CGRectGetWidth(self.slidingView.bounds);
+            [self layoutIfNeeded];
         }];
     } else {
         [UIView animateWithDuration:0.5 animations:^{
-            self.slidingView.transform = CGAffineTransformIdentity;
+            self.slidingViewTrailingConstraint.constant = 0.0f;
+            [self layoutIfNeeded];
         }];
     }
 }

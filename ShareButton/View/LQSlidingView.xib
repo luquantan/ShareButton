@@ -15,6 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="491" height="88"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-a1-dhC" userLabel="ContentView">
+                    <rect key="frame" x="491" y="0.0" width="491" height="88"/>
+                    <color key="backgroundColor" red="0.19215686269999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVh-Jx-Cp8" userLabel="SlidingView">
                     <rect key="frame" x="0.0" y="0.0" width="491" height="88"/>
                     <color key="backgroundColor" red="0.84705882352941175" green="0.77254901960784317" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
@@ -24,8 +28,12 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="TVh-Jx-Cp8" secondAttribute="bottom" id="6zA-A0-gRV"/>
                 <constraint firstAttribute="trailing" secondItem="TVh-Jx-Cp8" secondAttribute="trailing" id="B5x-sy-XWD"/>
+                <constraint firstItem="bsS-a1-dhC" firstAttribute="leading" secondItem="TVh-Jx-Cp8" secondAttribute="trailing" id="Ezw-Rb-GnQ"/>
+                <constraint firstItem="bsS-a1-dhC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ge9-fq-G1P"/>
+                <constraint firstAttribute="bottom" secondItem="bsS-a1-dhC" secondAttribute="bottom" id="NRl-co-glg"/>
                 <constraint firstItem="TVh-Jx-Cp8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S49-uF-6UQ"/>
                 <constraint firstItem="TVh-Jx-Cp8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gNL-FQ-Dnu"/>
+                <constraint firstItem="bsS-a1-dhC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="nrx-qM-hlh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
