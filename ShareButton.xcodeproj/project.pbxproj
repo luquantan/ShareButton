@@ -17,6 +17,8 @@
 		D9D730281BF9453800EC8137 /* UIView+loadNib.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D730271BF9453800EC8137 /* UIView+loadNib.m */; settings = {ASSET_TAGS = (); }; };
 		D9D7302B1BF9467500EC8137 /* LQSlidingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D7302A1BF9467500EC8137 /* LQSlidingView.m */; settings = {ASSET_TAGS = (); }; };
 		D9D7302D1BF9468100EC8137 /* LQSlidingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D7302C1BF9468100EC8137 /* LQSlidingView.xib */; settings = {ASSET_TAGS = (); }; };
+		D9D730301BF9546B00EC8137 /* LQShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D7302F1BF9546B00EC8137 /* LQShareView.m */; settings = {ASSET_TAGS = (); }; };
+		D9D730321BF9547800EC8137 /* LQShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D730311BF9547800EC8137 /* LQShareView.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		D9D730291BF9467500EC8137 /* LQSlidingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LQSlidingView.h; path = View/LQSlidingView.h; sourceTree = "<group>"; };
 		D9D7302A1BF9467500EC8137 /* LQSlidingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LQSlidingView.m; path = View/LQSlidingView.m; sourceTree = "<group>"; };
 		D9D7302C1BF9468100EC8137 /* LQSlidingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LQSlidingView.xib; path = View/LQSlidingView.xib; sourceTree = "<group>"; };
+		D9D7302E1BF9546B00EC8137 /* LQShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LQShareView.h; path = View/LQShareView.h; sourceTree = "<group>"; };
+		D9D7302F1BF9546B00EC8137 /* LQShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LQShareView.m; path = View/LQShareView.m; sourceTree = "<group>"; };
+		D9D730311BF9547800EC8137 /* LQShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LQShareView.xib; path = View/LQShareView.xib; sourceTree = "<group>"; };
 		F065C7A99D15164A5A079493 /* Pods-ShareButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareButton/Pods-ShareButton.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +124,9 @@
 				D9D730291BF9467500EC8137 /* LQSlidingView.h */,
 				D9D7302A1BF9467500EC8137 /* LQSlidingView.m */,
 				D9D7302C1BF9468100EC8137 /* LQSlidingView.xib */,
+				D9D7302E1BF9546B00EC8137 /* LQShareView.h */,
+				D9D7302F1BF9546B00EC8137 /* LQShareView.m */,
+				D9D730311BF9547800EC8137 /* LQShareView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9001C471BF93F6A00DDEF53 /* LaunchScreen.storyboard in Resources */,
+				D9D730321BF9547800EC8137 /* LQShareView.xib in Resources */,
 				D9001C441BF93F6A00DDEF53 /* Assets.xcassets in Resources */,
 				D9D7302D1BF9468100EC8137 /* LQSlidingView.xib in Resources */,
 				D9D730241BF9447200EC8137 /* ViewController.xib in Resources */,
@@ -257,6 +266,7 @@
 				D9D730281BF9453800EC8137 /* UIView+loadNib.m in Sources */,
 				D9001C3F1BF93F6A00DDEF53 /* ViewController.m in Sources */,
 				D9001C3C1BF93F6A00DDEF53 /* AppDelegate.m in Sources */,
+				D9D730301BF9546B00EC8137 /* LQShareView.m in Sources */,
 				D9D7302B1BF9467500EC8137 /* LQSlidingView.m in Sources */,
 				D9001C391BF93F6A00DDEF53 /* main.m in Sources */,
 			);
